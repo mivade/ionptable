@@ -5,3 +5,6 @@ _sources
 objects.inv
 .build
 ion_template.html
+*.aux
+*.log
+*.pdf
