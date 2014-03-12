@@ -9,10 +9,13 @@ group`_. You can download all the source files on GitHub_.
 .. _Monroe group: http://iontrap.umd.edu/
 .. _GitHub: https://github.com/mivade/ionptable
 
-.. Contents:
+Contents in list form:
 
-.. .. toctree::
-   .. :maxdepth: 2
+.. toctree::
+   :maxdepth: 2
+
+   calcium
+   
 
 .. Indices and tables
    ==================

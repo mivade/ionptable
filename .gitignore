@@ -3,3 +3,5 @@
 *.buildinfo
 _sources
 objects.inv
+.build
+ion_template.html
