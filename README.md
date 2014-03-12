@@ -1,4 +1,8 @@
-ionptable
-=========
+Ion Periodic Table
+==================
 
-Periodic table of ions used in ion trapping experiments
+This repository recreates the periodic table for ions used in ion
+trapping experiments once hosted on the
+[Monroe group web page][monroe].
+
+[monroe]: http://iontrap.umd.edu/
