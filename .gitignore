@@ -1,0 +1,5 @@
+*~
+*.pyc
+*.buildinfo
+_sources
+objects.inv
