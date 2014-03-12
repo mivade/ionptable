@@ -26,10 +26,12 @@ Research Groups
 ~~~~~~~~~~~~~~~
 
 * Aarhus_
+* Berkeley_
 * Innsbruck_
 * Oxford_
 
 .. _Aarhus: http://phys.au.dk/forskning/forskningsomraader/amo/the-ion-trap-group/
+.. _Berkeley: http://physics.berkeley.edu/research/haeffner/index.html
 .. _Innsbruck: http://www.quantumoptics.at/
 .. _Oxford: http://www2.physics.ox.ac.uk/research/ion-trap-quantum-computing-group
 
