@@ -3,9 +3,12 @@ Ion Periodic Table
 
 This repository recreates the periodic table for ions used in ion
 trapping experiments once hosted on the
-[Monroe group web page][monroe].
+[Monroe group web page][monroe]. The master branch contains the source
+files for generating energy level diagram figures. Unless you want to
+view or modify those, you probably want to go [here][gh-pages].
 
 [monroe]: http://iontrap.umd.edu/
+[here]: http://mivade.github.io/ionptable/
 
 License
 -------
