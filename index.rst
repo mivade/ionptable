@@ -18,7 +18,7 @@ GitHub_.
 Contents in alphabetical order:
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    barium
    beryllium

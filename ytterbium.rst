@@ -1,5 +1,5 @@
-Ytterbium Ions
-==============
+Ytterbium
+=========
 
 Energy Level Diagrams
 ---------------------

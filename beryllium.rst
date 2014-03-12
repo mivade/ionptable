@@ -1,8 +1,12 @@
-Beryllium Ions
-==============
+Beryllium
+=========
 
 Energy Level Diagrams
 ---------------------
+
+.. image:: img/BeLevels.png
+   :height: 350px
+   :alt: Be II energy levels.
 
 Photoionization Wavelengths
 ---------------------------

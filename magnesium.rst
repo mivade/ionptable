@@ -1,8 +1,12 @@
-Magnesium Ions
-==============
+Magnesium
+=========
 
 Energy Level Diagrams
 ---------------------
+
+.. image:: img/MgLevels.png
+   :height: 350px
+   :alt: Mg II energy levels.
 
 Photoionization Wavelengths
 ---------------------------

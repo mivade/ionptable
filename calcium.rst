@@ -1,8 +1,12 @@
-Calcium Ions
-============
+Calcium
+=======
 
 Energy Level Diagrams
 ---------------------
+
+.. image:: img/CaLevels.png
+   :height: 350px
+   :alt: Ca II energy levels.
 
 Photoionization Wavelengths
 ---------------------------

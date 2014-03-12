@@ -1,8 +1,12 @@
-Barium Ions
-===========
+Barium
+======
 
 Energy Level Diagrams
 ---------------------
+
+.. image:: img/BaLevels.png
+   :height: 350px
+   :alt: Ba II energy levels.
 
 Photoionization Wavelengths
 ---------------------------
