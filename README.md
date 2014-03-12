@@ -8,7 +8,7 @@ files for generating energy level diagram figures. Unless you want to
 view or modify those, you probably want to go [here][gh-pages].
 
 [monroe]: http://iontrap.umd.edu/
-[here]: http://mivade.github.io/ionptable/
+[gh-pages]: http://mivade.github.io/ionptable/
 
 License
 -------
