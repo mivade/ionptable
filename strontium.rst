@@ -17,7 +17,7 @@ Physical Properties
 ~~~~~~~~~~~~~~~~~~~
 
 * Wikipedia__
-* `Energy levels of X II (NIST)`__
+* `Energy levels of Sr II (NIST)`__
 
 __ https://en.wikipedia.org/wiki/Strontium
 __ http://physics.nist.gov/PhysRefData/Handbook/Tables/strontiumtable4.htm
@@ -25,8 +25,8 @@ __ http://physics.nist.gov/PhysRefData/Handbook/Tables/strontiumtable4.htm
 Research Groups
 ~~~~~~~~~~~~~~~
 
-* MIT Lincoln Lab
 * MIT_
+* MIT Lincoln Lab
 * NIST_
 
 .. include:: group_links.rst
