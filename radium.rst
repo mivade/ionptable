@@ -1,5 +1,5 @@
-Ytterbium
-=========
+Radium
+======
 
 Energy Level Diagrams
 ---------------------
@@ -17,17 +17,14 @@ Physical Properties
 ~~~~~~~~~~~~~~~~~~~
 
 * Wikipedia__
-* `Energy levels of Yb II (NIST)`__
+* `Energy levels of Ra II (NIST)`__
 
-__ https://en.wikipedia.org/wiki/Ytterbium
-__ http://physics.nist.gov/PhysRefData/Handbook/Tables/ytterbiumtable4.htm
+__ https://en.wikipedia.org/wiki/Radium
+__ http://physics.nist.gov/PhysRefData/Handbook/Tables/radiumtable4.htm
 
 Research Groups
 ~~~~~~~~~~~~~~~
 
-* Duke_
-* GTRI_
-* Maryland_
+* Your Group Here
 
-.. include:: group_links.rst
 .. include:: license.rst

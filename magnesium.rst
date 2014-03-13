@@ -31,8 +31,7 @@ Research Groups
 
 * Aarhus_
 * MPQ_
+* NIST_
 
-.. _Aarhus: http://phys.au.dk/forskning/forskningsomraader/amo/the-ion-trap-group/
-.. _MPQ: http://www.mpq.mpg.de/~haensch/
-
+.. include:: group_links.rst
 .. include:: license.rst

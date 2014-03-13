@@ -1,5 +1,5 @@
-Ytterbium
-=========
+Thorium
+=======
 
 Energy Level Diagrams
 ---------------------
@@ -17,17 +17,15 @@ Physical Properties
 ~~~~~~~~~~~~~~~~~~~
 
 * Wikipedia__
-* `Energy levels of Yb II (NIST)`__
+.. * `Energy levels of Th IV (NIST)`__
 
-__ https://en.wikipedia.org/wiki/Ytterbium
-__ http://physics.nist.gov/PhysRefData/Handbook/Tables/ytterbiumtable4.htm
+__ https://en.wikipedia.org/wiki/Whatever
+.. __ http://physics.nist.gov/PhysRefData/Handbook/Tables/calciumtable6.htm
 
 Research Groups
 ~~~~~~~~~~~~~~~
 
-* Duke_
-* GTRI_
-* Maryland_
+* Michigan_
 
 .. include:: group_links.rst
 .. include:: license.rst

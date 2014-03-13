@@ -64,7 +64,8 @@ release = '1.0.0'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
-exclude_patterns = ['.build', 'ion_template.rst', 'license.rst']
+exclude_patterns = ['.build', 'ion_template.rst', 'license.rst',
+                    'group_links.rst']
 
 # The reST default role (used for this markup: `text`) to use for all documents.
 #default_role = None

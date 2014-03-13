@@ -31,6 +31,5 @@ Research Groups
 
 * NIST_
 
-.. _NIST: http://www.nist.gov/pml/div688/grp10/index.cfm
-
+.. include:: group_links.rst
 .. include:: license.rst

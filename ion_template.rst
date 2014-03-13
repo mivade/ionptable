@@ -1,5 +1,5 @@
-xxx Ions
-========
+xxx
+===
 
 Energy Level Diagrams
 ---------------------
@@ -27,4 +27,5 @@ Research Groups
 
 * Your Group Here
 
+.. include:: group_links.rst
 .. include:: license.rst

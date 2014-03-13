@@ -1,4 +1,4 @@
-Ytterbium
+Strontium
 =========
 
 Energy Level Diagrams
@@ -17,17 +17,16 @@ Physical Properties
 ~~~~~~~~~~~~~~~~~~~
 
 * Wikipedia__
-* `Energy levels of Yb II (NIST)`__
+* `Energy levels of X II (NIST)`__
 
-__ https://en.wikipedia.org/wiki/Ytterbium
-__ http://physics.nist.gov/PhysRefData/Handbook/Tables/ytterbiumtable4.htm
+__ https://en.wikipedia.org/wiki/Strontium
+__ http://physics.nist.gov/PhysRefData/Handbook/Tables/strontiumtable4.htm
 
 Research Groups
 ~~~~~~~~~~~~~~~
 
-* Duke_
-* GTRI_
-* Maryland_
+* MIT Lincoln Lab
+* MIT_
+* NIST_
 
-.. include:: group_links.rst
 .. include:: license.rst

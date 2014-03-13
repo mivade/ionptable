@@ -34,9 +34,5 @@ Research Groups
 * Northwestern_
 * `University of Washington`_
 
-.. _Innsbruck: http://heart-c704.uibk.ac.at/
-.. _Georgia Tech: http://chapmanlabs.gatech.edu/
-.. _Northwestern: http://faculty.wcas.northwestern.edu/brian-odom/index.html
-.. _University of Washington: https://depts.washington.edu/qcomp/
-
+.. include:: group_links.rst
 .. include:: license.rst
