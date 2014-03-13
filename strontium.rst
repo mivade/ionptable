@@ -4,6 +4,10 @@ Strontium
 Energy Level Diagrams
 ---------------------
 
+.. image:: img/SrLevels.png
+   :height: 350px
+   :alt: Sr II energy levels.
+
 Photoionization Wavelengths
 ---------------------------
 
