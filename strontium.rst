@@ -29,4 +29,5 @@ Research Groups
 * MIT_
 * NIST_
 
+.. include:: group_links.rst
 .. include:: license.rst

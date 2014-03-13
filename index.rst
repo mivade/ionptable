@@ -24,7 +24,9 @@ Contents in alphabetical order:
    beryllium
    calcium
    magnesium
+   radium
    strontium
+   thorium
    ytterbium
 
 .. include:: license.rst
