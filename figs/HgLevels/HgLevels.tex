@@ -1,0 +1,42 @@
+\documentclass[12pt]{article}
+
+\usepackage{../levels}
+
+\pagestyle{empty}
+
+\begin{document}
+
+\begin{tikzpicture}[scale=1]
+  \tikzstyle{level} = [line width=2]
+  \tikzstyle{transition} = [line width=1.75,>=stealth,<->]
+  \tikzstyle{tlabel} = [sloped,midway,fill=white]
+
+  \def\lwidth{1}
+  \def\dy{.025}
+  
+  % Level centers
+  \node[coordinate] (S12) at (0,0) {};
+  \node[coordinate] (P12) at ($(S12)+(2,5)$) {}; 
+  \node[coordinate] (P32) at ($(P12)+(0,1)$) {}; 
+
+  % Levels
+  \draw[level] (S12) -- +(-\lwidth,0) node[left] {$6^2S_{1/2}$} --
+    +(\lwidth,0);  
+  \draw[level] (P12) -- +(-\lwidth,0) node[left] {$6^2P_{1/2}$} --
+    +(\lwidth,0);
+  \draw[level] (P32) -- +(-\lwidth,0) node[left] {$6^2P_{3/2}$} --
+    +(\lwidth,0);
+
+  % Transitions
+  \draw[transition,violet] ($(S12)-(-.4,-\dy)$) -- ($(P12)-(-.2,\dy)$)
+    node[tlabel] {194.2 nm};
+  \draw[transition,DarkOrchid] ($(S12)-(.4,-\dy)$) -- ($(P32)-(.2,\dy)$)
+    node[tlabel] {165.0 nm};
+\end{tikzpicture}
+
+\end{document}
+
+%%% Local Variables: 
+%%% mode: tex-pdf
+%%% TeX-master: t
+%%% End: 
