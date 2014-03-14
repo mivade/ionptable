@@ -10,5 +10,5 @@ all: $(PDFS) $(PNGS)
 
 %.png: %.pdf
 	mkdir -p img
-	$(CONVERT) $< $@; mv $@ img/
+	$(CONVERT) $< $@; mv $@ ../img/
 
