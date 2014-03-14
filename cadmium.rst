@@ -1,17 +1,15 @@
-Mercury
+Cadmium
 =======
 
 Energy Level Diagrams
 ---------------------
 
-.. image:: img/HgLevels.png
+.. image:: img/CdLevels.png
    :height: 350px
-   :alt: Hg II energy levels.
+   :alt: Cd II energy levels.
 
 Photoionization Wavelengths
 ---------------------------
-
-Neutral Mercury: S to singlet P transition at 184.9 nm
 
 Transition Strengths
 --------------------
@@ -23,15 +21,15 @@ Physical Properties
 ~~~~~~~~~~~~~~~~~~~
 
 * Wikipedia__
-* `Energy levels of Hg II (NIST)`__
+* `Energy levels of Cd II (NIST)`__
 
-__ https://en.wikipedia.org/wiki/Mercury
-__ http://physics.nist.gov/PhysRefData/Handbook/Tables/mercurytable4.htm
+__ https://en.wikipedia.org/wiki/Cadmium
+__ http://physics.nist.gov/PhysRefData/Handbook/Tables/cadmiumtable4.htm
 
 Research Groups
 ~~~~~~~~~~~~~~~
 
-* NIST_
+* Maryland_
 
 .. include:: group_links.rst
 .. include:: license.rst

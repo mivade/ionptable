@@ -22,6 +22,7 @@ Contents in alphabetical order:
 
    barium
    beryllium
+   cadmium
    calcium
    magnesium
    mercury
