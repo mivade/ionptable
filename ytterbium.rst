@@ -7,6 +7,9 @@ Energy Level Diagrams
 Photoionization Wavelengths
 ---------------------------
 
+Neutral Ytterbium: S to singlet P transition at 399 nm, then 394 nm to
+continuum
+
 Transition Strengths
 --------------------
 
@@ -17,7 +20,7 @@ Physical Properties
 ~~~~~~~~~~~~~~~~~~~
 
 * Wikipedia__
-* `Energy levels of Yb II (NIST)`__
+* `Yb II lines (NIST)`__
 
 __ https://en.wikipedia.org/wiki/Ytterbium
 __ http://physics.nist.gov/PhysRefData/Handbook/Tables/ytterbiumtable4.htm

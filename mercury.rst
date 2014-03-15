@@ -23,7 +23,7 @@ Physical Properties
 ~~~~~~~~~~~~~~~~~~~
 
 * Wikipedia__
-* `Energy levels of Hg II (NIST)`__
+* `Hg II lines (NIST)`__
 
 __ https://en.wikipedia.org/wiki/Mercury
 __ http://physics.nist.gov/PhysRefData/Handbook/Tables/mercurytable4.htm

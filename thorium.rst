@@ -18,10 +18,7 @@ Physical Properties
 
 * Wikipedia__
 
-.. * `Energy levels of Th IV (NIST)`__
-
 __ https://en.wikipedia.org/wiki/Thorium
-.. .. __ http://physics.nist.gov/PhysRefData/Handbook/Tables/calciumtable6.htm
 
 Research Groups
 ~~~~~~~~~~~~~~~

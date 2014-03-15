@@ -11,6 +11,8 @@ Energy Level Diagrams
 Photoionization Wavelengths
 ---------------------------
 
+Neutral magnesium: S to singlet P transition at 202.5 nm
+
 Transition Strengths
 --------------------
 
@@ -21,7 +23,7 @@ Physical Properties
 ~~~~~~~~~~~~~~~~~~~
 
 * Wikipedia__
-* `Energy levels of Mg II (NIST)`__
+* `Mg II lines (NIST)`__
 
 __ https://en.wikipedia.org/wiki/Magnesium
 __ http://physics.nist.gov/PhysRefData/Handbook/Tables/magnesiumtable4.htm
