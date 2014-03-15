@@ -1,29 +1,12 @@
 \documentclass[12pt]{article}
 
-\usepackage[svgnames]{xcolor}
-\usepackage{tikz}
-\usetikzlibrary{calc}
-\usepackage[active,tightpage]{preview}
-\PreviewEnvironment{tikzpicture}
-
-\pagestyle{empty}
+\usepackage{../levels}
 
 \begin{document}
 
 \begin{tikzpicture}[scale=1]
-  \tikzstyle{level} = [line width=2]
-  \tikzstyle{transition} = [line width=1.75,>=stealth,<->]
-  \tikzstyle{tlabel} = [sloped,midway,fill=white]
-
-  \def\lwidth{1}
-  \def\dy{.025}
-  
   % Level centers
-  \node[coordinate] (S12) at (0,0) {}; % ground state, 6S_1/2
-  \node[coordinate] (P12) at ($(S12)+(0,5)$) {}; % 6P_1/2
-  \node[coordinate] (P32) at ($(P12)+(0,1)$) {}; % 6P_3/2
-  \node[coordinate] (D32) at ($(S12)+(6,2.5)$) {}; % D_3/2
-  \node[coordinate] (D52) at ($(D32)+(0,1)$) {}; % D_5/2
+  \input{../nodes}
 
   % Levels
   \draw[level] (S12) -- +(-\lwidth,0) node[left] {$6^2S_{1/2}$} --
@@ -38,9 +21,9 @@
     {$5^2D_{5/2}$};
 
   % Transitions
-  \draw[transition,Teal] ($(S12)-(.2,-\dy)$) -- +($(P12)-(0,\dy)$)
+  \draw[transition,Teal] ($(S12)-(.2,-\dy)$) -- ($(P12)-(0,\dy)$)
     node[tlabel] {493.4 nm};
-  \draw[transition,cyan] ($(S12)-(.75,-\dy)$) -- +($(P32)-(0,\dy)$)
+  \draw[transition,cyan] ($(S12)-(.75,-\dy)$) -- ($(P32)-(.25,\dy)$)
     node[tlabel] {455.4 nm};
   \draw[transition,red] ($(D32)-(.7,-\dy)$) -- ($(P12)-(0,\dy)$)
     node[tlabel] {649.7 nm};
@@ -48,9 +31,9 @@
     node[tlabel] {614 nm};
   \draw[transition,orange] ($(D32)+(0,\dy)$) -- ($(P32)-(.2,\dy)$)
     node[tlabel] {585.5 nm};
-  \draw[transition,Maroon] ($(S12)+(.7,\dy)$) -- ($(D32)+(.6,0)$)
+  \draw[transition,Maroon] ($(S12)+(.7,\dy)$) -- ($(D32)+(.6,-\dy)$)
     node[tlabel] {2052 nm};
-  \draw[transition,Maroon] ($(S12)+(0,\dy)$) -- ($(D52)+(.5,0)$)
+  \draw[transition,Maroon] ($(S12)+(0,\dy)$) -- ($(D52)+(.5,-\dy)$)
     node[tlabel] {1760 nm};
 \end{tikzpicture}
 

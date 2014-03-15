@@ -41,3 +41,4 @@ ion_template.html
 *.xdy
 *.tdo
 *.pdf
+figs/*/*.png

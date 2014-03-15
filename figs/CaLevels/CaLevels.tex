@@ -1,32 +1,12 @@
 \documentclass[12pt]{article}
 
-\usepackage[svgnames]{xcolor}
-\usepackage{tikz}
-\usetikzlibrary{calc}
-\usepackage[active,tightpage]{preview}
-\PreviewEnvironment{tikzpicture}
-%\setlength\PreviewBorder{24pt}
-
-\newcommand{\ket}[1]{\ensuremath{\left|#1\right\rangle}}
-
-\pagestyle{empty}
+\usepackage{../levels}
 
 \begin{document}
 
 \begin{tikzpicture}[scale=1]
-  \tikzstyle{level} = [line width=2]
-  \tikzstyle{transition} = [line width=1.75,>=stealth,<->]
-  \tikzstyle{tlabel} = [sloped,midway,fill=white]
-
-  \def\lwidth{1}
-  \def\dy{.025}
-  
   % Level centers
-  \node[coordinate] (S12) at (0,0) {};
-  \node[coordinate] (P12) at ($(S12)+(0,5)$) {}; 
-  \node[coordinate] (P32) at ($(P12)+(0,1)$) {}; 
-  \node[coordinate] (D32) at ($(S12)+(5,2.5)$) {};
-  \node[coordinate] (D52) at ($(D32)+(0,1)$) {};
+  \input{../nodes}
 
   % Levels
   \draw[level] (S12) -- +(-\lwidth,0) node[left] {$4^2S_{1/2}$} --
