@@ -35,6 +35,7 @@ Research Groups
 ~~~~~~~~~~~~~~~
 
 * Aarhus_
+* Basel_
 * Berkeley_
 * Innsbruck_
 * Oxford_

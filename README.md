@@ -19,5 +19,9 @@ The files contained in this repository are distributed under the terms
 of the [Creative Commons][CC]
 [Attribution-ShareAlike 4.0 International][CC BY-SA 4.0] license.
 
+The periodic table image was modified from the original SVG source
+found [here][svg ptable].
+
 [CC]: https://creativecommons.org
 [CC BY-SA 4.0]: https://creativecommons.org/licenses/by-sa/4.0/
+[svg ptable]: https://en.wikipedia.org/wiki/File:Periodic_table.svg

@@ -1,5 +1,7 @@
 .. _Aarhus: http://phys.au.dk/forskning/forskningsomraader/amo/the-ion-trap-group/
+.. _Basel: http://www.chemie.unibas.ch/~willitsch/
 .. _Berkeley: http://physics.berkeley.edu/research/haeffner/index.html
+.. _Düsseldorf: http://www.exphy.uni-duesseldorf.de/
 .. _Innsbruck: http://heart-c704.uibk.ac.at/
 .. _Duke: http://mist.ee.duke.edu/index.php
 .. _Georgia Tech: http://chapmanlabs.gatech.edu/
@@ -11,4 +13,5 @@
 .. _NIST: http://www.nist.gov/pml/div688/grp10/index.cfm
 .. _Northwestern: http://faculty.wcas.northwestern.edu/brian-odom/index.html
 .. _Oxford: http://www2.physics.ox.ac.uk/research/ion-trap-quantum-computing-group
+.. _Ulm: http://www.uni-ulm.de/en/nawi/qm.html
 .. _University of Washington: https://depts.washington.edu/qcomp/

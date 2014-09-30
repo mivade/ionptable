@@ -33,9 +33,11 @@ __ http://physics.nist.gov/PhysRefData/Handbook/Tables/bariumtable4.htm
 Research Groups
 ~~~~~~~~~~~~~~~
 
+* Düsseldorf_
 * Innsbruck_
 * `Georgia Tech`_
 * Northwestern_
+* Ulm_
 * `University of Washington`_
 
 .. include:: replacements.rst

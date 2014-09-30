@@ -31,6 +31,7 @@ __ http://physics.nist.gov/PhysRefData/Handbook/Tables/berylliumtable4.htm
 Research Groups
 ~~~~~~~~~~~~~~~
 
+* Düsseldorf_
 * NIST_
 
 .. include:: group_links.rst
