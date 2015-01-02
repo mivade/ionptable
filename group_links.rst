@@ -15,3 +15,5 @@
 .. _Oxford: http://www2.physics.ox.ac.uk/research/ion-trap-quantum-computing-group
 .. _Ulm: http://www.uni-ulm.de/en/nawi/qm.html
 .. _University of Washington: https://depts.washington.edu/qcomp/
+.. _NPL: http://www.npl.co.uk/science-technology/time-frequency/research/optical-frequency-standards/trapped-ion-optical-frequency-standards
+.. _Paris: http://www.mpq.univ-paris-diderot.fr/spip.php?rubrique29&lang=en

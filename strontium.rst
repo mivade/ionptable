@@ -38,6 +38,9 @@ Research Groups
 * MIT_
 * MIT Lincoln Lab
 * NIST_
+* NPL_
+* Paris_
+* Innsbruck_
 
 .. include:: replacements.rst
 .. include:: group_links.rst
