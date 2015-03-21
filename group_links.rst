@@ -7,7 +7,7 @@
 .. _Georgia Tech: http://chapmanlabs.gatech.edu/
 .. _GTRI: http://www.quantum.gatech.edu/home.shtml
 .. _Maryland: http://iontrap.umd.edu/
-.. _Michigan: http://kuzmichgroup.gatech.edu/thiontrapping.php
+.. _Michigan: http://sites.lsa.umich.edu/kuzmich-lab/research/229th-nuclear-isomer/
 .. _MIT: http://web.mit.edu/~cua/www/quanta/
 .. _MPQ: http://www.mpq.mpg.de/~haensch/
 .. _NIST: http://www.nist.gov/pml/div688/grp10/index.cfm
