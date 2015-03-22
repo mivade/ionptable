@@ -9,10 +9,9 @@ Wavelengths are generally taken from the
 which lists air wavelengths for 200 nm < λ < 2000 nm and vacuum
 wavelengths for all others.
 
-If you notice an error, or would like your group's page linked to from
-an ion page, fork the repository, make changes, and submit a pull
-request. Alternatively, email [Mike DePalatis](depalatis@phys.au.dk)
-with the requested changes.
-
-Source files for figures and this documentation can be found on
-[GitHub](https://github.com/mivade/ionptable).
+Source files for this web site are on
+[GitHub](https://github.com/mivade/ionptable). If you notice an error,
+or would like your group's page linked to from an ion page, fork the
+repository, make changes, and submit a pull request. Alternatively,
+[open a new issue](https://github.com/mivade/ionptable/issues) on
+GitHub.
