@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """Flask application for rendering Ion Trapping Periodic Table pages."""
 
 from flask import Flask, render_template, Markup, json
@@ -13,7 +14,13 @@ IMAGES = {
     'magnesium': 'img/MgLevels.png',
     'strontium': 'img/SrLevels.png'
 }
+GROUPS = {
+    'barium': ['Düsseldorf', 'Innsbruck', 'Georgia Tech', 'Northwestern', 'Ulm', 'Washington'],
+    'calcium': ['Aarhus', 'Basel', 'Berkeley', 'Innsbruck', 'Oxford']
+}
 
+with open('groups.json', 'r') as f:
+    LINKS = json.load(f)
 with open('isotopes.json', 'r') as f:
     isotopes = json.load(f)
 
@@ -44,11 +51,19 @@ def entry(ion):
         levels_file = IMAGES[ion]
     else:
         levels_file = None
+    if ion in GROUPS:
+        groups = GROUPS[ion]
+        links = [LINKS[group] for group in groups]
+    else:
+        groups = ''
+        links = ''
     print(levels_file)
     return render_template(
         'ion.html', title=(ion.title() + ' - ' + TITLE),
         ion=ion, isotopes=isotopes[ion],
-        levels_file=levels_file, levels_alt=ion)
+        levels_file=levels_file, levels_alt=ion,
+        groups=groups, links=links
+    )
 
 if __name__ == "__main__":
     app.run(debug=True)

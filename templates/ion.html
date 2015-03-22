@@ -26,4 +26,15 @@
     {% endfor %}
   </table>
 </div>
+<div id="links">
+  <h2>Useful links</h2>
+  <h3>Research groups</h3>
+  <div id="group-links">
+    <ul>
+    {% for group in groups|default('') %}
+      <li><a href="{{ links[group] }}">{{ group }}</a></li>
+    {% endfor %}
+    </ul>
+  </div>
+</div>
 {% endblock %}
