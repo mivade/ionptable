@@ -4,6 +4,15 @@ from flask import Flask, render_template, Markup, json
 from markdown import markdown
 
 TITLE = "Ion Trapping Periodic Table"
+IMAGES = {
+    'barium': 'img/BaLevels.png',
+    'beryllium': 'img/BeLevels.png',
+    'calcium': 'img/CaLevels.png',
+    'cadmium': 'img/CdLevels.png',
+    'mercury': 'img/HgLevels.png',
+    'magnesium': 'img/MgLevels.png',
+    'strontium': 'img/SrLevels.png'
+}
 
 with open('isotopes.json', 'r') as f:
     isotopes = json.load(f)
@@ -31,9 +40,15 @@ def index():
 @app.route('/<ion>/')
 def entry(ion):
     """Page showing details for a particular ion."""
+    if str(ion) in IMAGES:
+        levels_file = IMAGES[ion]
+    else:
+        levels_file = None
+    print(levels_file)
     return render_template(
-        'ion.html', title=('Barium - ' + TITLE),
-        ion=ion, isotopes=isotopes[ion])
+        'ion.html', title=(ion.title() + ' - ' + TITLE),
+        ion=ion, isotopes=isotopes[ion],
+        levels_file=levels_file, levels_alt=ion)
 
 if __name__ == "__main__":
     app.run(debug=True)

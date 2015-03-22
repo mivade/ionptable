@@ -1,10 +1,10 @@
 {% extends "base.html" %}
 {% block content %}
 <h1>{{ ion|capitalize }}</h1>
-{% if levels is defined %}
+{% if levels_file is not none %}
 <h2>Energy level diagrams</h2>
 <div id="level-diagram">
-  <img src="{{ levels_file }}" alt="{{ levels_alt }}"/>
+  <img src="{{ url_for('static', filename=levels_file) }}" alt="{{ levels_alt }}"/>
 </div>
 {% endif %}
 <h2>Isotope data</h2>
