@@ -17,6 +17,9 @@
     <div class="container" id="content" role="main">
       {% block content %}{% endblock %}
     </div>
+    <div class="container" id="license">
+      {% include('license.html') %}
+    </div>
     <script src="/static/jquery.min.js"></script>
     <script src="/static/bootstrap.min.js"></script>
   </body>
