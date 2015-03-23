@@ -1,5 +1,5 @@
-These pages contain information on candidate ion species for use in
-ion trap quantum computing and other atomic physics experiments. It is
+These pages contain information on atomic ions used in quantum optics,
+quantum computing, and other atomic physics experiments. It was
 originally based on pages maintained and hosted by the
 [Monroe group](http://iontrap.umd.edu/) (their new version can be
 found [here](http://iontrap.umd.edu/resources-2/periodic-table/)).
