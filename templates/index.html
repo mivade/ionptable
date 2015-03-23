@@ -1,4 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 {{ text }}
+<div class="ptable">
+  <object type="image/svg+xml" id="ptable" data="{{ url_for('static', filename='img/ptable.svg') }}"></object>
+</div>
 {% endblock %}

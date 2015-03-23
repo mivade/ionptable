@@ -1,3 +1,12 @@
 body {
-  padding-top: 60px;
+    padding-top: 60px;
+}
+
+.ptable {
+    width: 100%;
+    float: left;
+}
+
+#ptable {
+    width: 100%;
 }
