@@ -16,7 +16,14 @@ IMAGES = {
 }
 GROUPS = {
     'barium': ['Düsseldorf', 'Innsbruck', 'Georgia Tech', 'Northwestern', 'Ulm', 'Washington'],
-    'calcium': ['Aarhus', 'Basel', 'Berkeley', 'Innsbruck', 'Oxford']
+    'beryllium': ['Düsseldorf', 'NIST'],
+    'calcium': ['Aarhus', 'Basel', 'Berkeley', 'Innsbruck', 'Oxford'],
+    'cadmium': ['Maryland'],
+    'mercury': ['NIST'],
+    'magnesium': ['Aarhus', 'MPQ', 'NIST'],
+    'strontium': ['MIT', 'MIT Lincoln Lab', 'NIST', 'NPL', 'Paris', 'Innsbruck'],
+    'thorium': ['Michigan'],
+    'ytterbium': ['Duke', 'GTRI', 'Maryland']
 }
 
 with open('groups.json', 'r') as f:
@@ -34,7 +41,7 @@ app.config['ions'] = [
 def from_markdown(filename):
     """Read a Markdown file and convert to HTML."""
     with open(filename, 'r') as f:
-        text = f.read().decode('utf-8')
+        text = f.read()
     return Markup(markdown(text, output_format='html5'))
 
 @app.route('/')

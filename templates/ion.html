@@ -36,7 +36,7 @@
   <div id="group-links">
     <ul>
     {% for group in groups|default('') %}
-      <li><a href="{{ links[group] }}">{{ group }}</a></li>
+      <li><a href="{{ links[loop.index - 1] }}">{{ group }}</a></li>
     {% endfor %}
     </ul>
   </div>
