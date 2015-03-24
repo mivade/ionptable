@@ -6,13 +6,13 @@ from markdown import markdown
 
 TITLE = "Ion Trapping Periodic Table"
 IMAGES = {
-    'barium': 'img/BaLevels.png',
-    'beryllium': 'img/BeLevels.png',
-    'calcium': 'img/CaLevels.png',
-    'cadmium': 'img/CdLevels.png',
-    'mercury': 'img/HgLevels.png',
-    'magnesium': 'img/MgLevels.png',
-    'strontium': 'img/SrLevels.png'
+    'barium': 'img/BaLevels.svg',
+    'beryllium': 'img/BeLevels.svg',
+    'calcium': 'img/CaLevels.svg',
+    'cadmium': 'img/CdLevels.svg',
+    'mercury': 'img/HgLevels.svg',
+    'magnesium': 'img/MgLevels.svg',
+    'strontium': 'img/SrLevels.svg'
 }
 GROUPS = {
     'barium': ['Düsseldorf', 'Innsbruck', 'Georgia Tech', 'Northwestern', 'Ulm', 'Washington'],

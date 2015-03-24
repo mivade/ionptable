@@ -1,13 +1,14 @@
 PDFCC = pdflatex
-CONVERT = convert -background white -flatten -density 180 
+CONVERT = pdf2svg
 PDFS = $(shell find . -name '*.tex' | sed 's/tex/pdf/')
-PNGS = $(shell find . -name '*.tex'  | sed 's/tex/png/')
+IMGDIR = '../static/img/'
+SVGS = $(shell find . -name '*.tex'  | sed 's/tex/svg/')
 
 .PHONY:
 	echo $(PDFS)
-	echo $(PNGS)
+	echo $(SVGS)
 
-all: $(PDFS) $(PNGS)
+all: $(PDFS) $(SVGS)
 
 nodes.pdf: nodes.tex
 	echo 'nothing to do'
@@ -18,6 +19,6 @@ nodes.png: nodes.tex
 %.pdf: %.tex
 	cd $(shell dirname $<); $(PDFCC) $(shell basename $<)
 
-%.png: %.pdf
-	mkdir -p ../img
-	$(CONVERT) $< $@; cp $@ ../img/
+%.svg: %.pdf
+	mkdir -p $(IMGDIR)
+	$(CONVERT) $< $@; mv $@ $(IMGDIR)
