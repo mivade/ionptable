@@ -30,6 +30,11 @@ with open('groups.json', 'r') as f:
     LINKS = json.load(f)
 with open('isotopes.json', 'r') as f:
     isotopes = json.load(f)
+with open('static/img/ptable.svg', 'r') as f:
+    # Don't include the first 3 lines which include stuff we don't
+    # want/need to embed.
+    svg = f.readlines()[3:]
+    ptable_svg = Markup(''.join(svg))
 
 app = Flask('ionptable')
 app.config['ions'] = [
@@ -49,7 +54,7 @@ def index():
     """Index page."""
     text = from_markdown('index.md')
     return render_template(
-        'index.html', title=TITLE, text=text)
+        'index.html', title=TITLE, text=text, ptable_svg=ptable_svg)
 
 @app.route('/<ion>/')
 def entry(ion):
