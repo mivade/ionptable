@@ -86,6 +86,6 @@ def ion_entries():
         yield '/{}/'.format(ion)
 
 if __name__ == "__main__":
-    #app.run(debug=True)
-    freezer.run(debug=True)
+    app.run(debug=True)
+    #freezer.run(debug=True)
     

@@ -15,3 +15,9 @@ body {
     height: 100%;
     max-width: 65em;
 }
+
+img.level-diagram {
+    height: 50vh;
+    max-width: 50em;
+    max-height: 50em;
+}

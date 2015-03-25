@@ -4,7 +4,7 @@
 {% if levels_file is not none %}
 <div id="level-diagram">
   <h2>Energy level diagrams</h2>
-  <img src="{{ url_for('static', filename=levels_file) }}" alt="{{ levels_alt }}"/>
+  <img class="level-diagram" src="{{ url_for('static', filename=levels_file) }}" alt="{{ levels_alt }}"/>
 </div>
 {% endif %}
 <div id="isotope-data">
