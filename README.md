@@ -22,6 +22,9 @@ found [here][svg ptable] which is distributed under the terms of the
 [Creative Commons][CC]
 [Attribution-ShareAlike 3.0 Unported][CC BY-SA 3.0] license.
 
+CSS is based on [Bootstrap][] which is distributed under the terms of
+the [MIT license](https://github.com/twbs/bootstrap/blob/master/LICENSE).
+
 All other files contained in this repository are distributed under the
 terms of the [Creative Commons][CC]
 [Attribution-ShareAlike 4.0 International][CC BY-SA 4.0] license.
@@ -29,4 +32,5 @@ terms of the [Creative Commons][CC]
 [CC]: https://creativecommons.org
 [CC BY-SA 3.0]: https://creativecommons.org/licenses/by-sa/3.0/
 [CC BY-SA 4.0]: https://creativecommons.org/licenses/by-sa/4.0/
+[Bootstrap]: http://getbootstrap.com/
 [svg ptable]: https://commons.wikimedia.org/wiki/File:Periodic_Table_Armtuk3.svg

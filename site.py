@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
 """Flask application for rendering Ion Trapping Periodic Table pages."""
 
+import codecs
 from flask import Flask, render_template, Markup, json
+from flask.ext.frozen import Freezer
 from markdown import markdown
 
 TITLE = "Ion Trapping Periodic Table"
@@ -15,8 +17,8 @@ IMAGES = {
     'strontium': 'img/SrLevels.svg'
 }
 GROUPS = {
-    'barium': ['Düsseldorf', 'Innsbruck', 'Georgia Tech', 'Northwestern', 'Ulm', 'Washington'],
-    'beryllium': ['Düsseldorf', 'NIST'],
+    'barium': [u'Düsseldorf', 'Innsbruck', 'Georgia Tech', 'Northwestern', 'Ulm', 'Washington'],
+    'beryllium': [u'Düsseldorf', 'NIST'],
     'calcium': ['Aarhus', 'Basel', 'Berkeley', 'Innsbruck', 'Oxford'],
     'cadmium': ['Maryland'],
     'mercury': ['NIST'],
@@ -26,7 +28,7 @@ GROUPS = {
     'ytterbium': ['Duke', 'GTRI', 'Maryland']
 }
 
-with open('groups.json', 'r') as f:
+with codecs.open('groups.json', 'r', 'utf-8') as f:
     LINKS = json.load(f)
 with open('isotopes.json', 'r') as f:
     isotopes = json.load(f)
@@ -42,10 +44,11 @@ app.config['ions'] = [
     'magnesium', 'mercury', 'radium', 'strontium',
     'thorium', 'ytterbium'
 ]
+freezer = Freezer(app)
 
 def from_markdown(filename):
     """Read a Markdown file and convert to HTML."""
-    with open(filename, 'r') as f:
+    with codecs.open(filename, 'r', 'utf-8') as f:
         text = f.read()
     return Markup(markdown(text, output_format='html5'))
 
@@ -77,6 +80,12 @@ def entry(ion):
         groups=groups, links=links
     )
 
+@freezer.register_generator
+def ion_entries():
+    for ion in app.config['ions']:
+        yield '/{}/'.format(ion)
+
 if __name__ == "__main__":
-    app.run(debug=True)
+    #app.run(debug=True)
+    freezer.run(debug=True)
     

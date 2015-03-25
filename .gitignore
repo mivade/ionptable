@@ -42,3 +42,4 @@ ion_template.html
 *.tdo
 *.pdf
 figs/*/*.png
+build/
