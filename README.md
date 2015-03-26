@@ -23,7 +23,10 @@ found [here][svg ptable] which is distributed under the terms of the
 [Attribution-ShareAlike 3.0 Unported][CC BY-SA 3.0] license.
 
 CSS is based on [Bootstrap][] which is distributed under the terms of
-the [MIT license](https://github.com/twbs/bootstrap/blob/master/LICENSE).
+the
+[MIT license](https://github.com/twbs/bootstrap/blob/master/LICENSE). Additional
+components from Bootstrap are also included (see files in `src/static`
+for their specific licenses).
 
 All other files contained in this repository are distributed under the
 terms of the [Creative Commons][CC]
