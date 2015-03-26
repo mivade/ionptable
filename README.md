@@ -1,5 +1,5 @@
-Ion Periodic Table
-==================
+Ion Trapping Periodic Table
+===========================
 
 This repository recreates the Ion Periodic Table listing ions used in
 ion trapping experiments originally hosted on the
@@ -17,13 +17,20 @@ the source tree.
 License
 -------
 
-The files contained in this repository are distributed under the terms
-of the [Creative Commons][CC]
+The periodic table image was modified from the original SVG source
+found [here][svg ptable] which is distributed under the terms of the
+[Creative Commons][CC]
+[Attribution-ShareAlike 3.0 Unported][CC BY-SA 3.0] license.
+
+CSS is based on [Bootstrap][] which is distributed under the terms of
+the [MIT license](https://github.com/twbs/bootstrap/blob/master/LICENSE).
+
+All other files contained in this repository are distributed under the
+terms of the [Creative Commons][CC]
 [Attribution-ShareAlike 4.0 International][CC BY-SA 4.0] license.
 
-The periodic table image was modified from the original SVG source
-found [here][svg ptable].
-
 [CC]: https://creativecommons.org
+[CC BY-SA 3.0]: https://creativecommons.org/licenses/by-sa/3.0/
 [CC BY-SA 4.0]: https://creativecommons.org/licenses/by-sa/4.0/
-[svg ptable]: https://en.wikipedia.org/wiki/File:Periodic_table.svg
+[Bootstrap]: http://getbootstrap.com/
+[svg ptable]: https://commons.wikimedia.org/wiki/File:Periodic_Table_Armtuk3.svg
