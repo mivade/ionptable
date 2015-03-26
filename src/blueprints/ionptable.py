@@ -1,9 +1,8 @@
 # -*- coding: utf-8 -*-
-"""Flask application for rendering Ion Trapping Periodic Table pages."""
+"""Flask blueprint for rendering Ion Trapping Periodic Table pages."""
 
 import codecs
-from flask import Flask, render_template, Markup, json
-from flask.ext.frozen import Freezer
+from flask import Blueprint, render_template, Markup, json
 from markdown import markdown
 
 TITLE = "Ion Trapping Periodic Table"
@@ -38,28 +37,22 @@ with open('static/img/ptable.svg', 'r') as f:
     svg = f.readlines()[3:]
     ptable_svg = Markup(''.join(svg))
 
-app = Flask('ionptable')
-app.config['ions'] = [
-    'barium', 'beryllium', 'cadmium', 'calcium',
-    'magnesium', 'mercury', 'radium', 'strontium',
-    'thorium', 'ytterbium'
-]
-freezer = Freezer(app)
-
 def from_markdown(filename):
     """Read a Markdown file and convert to HTML."""
     with codecs.open(filename, 'r', 'utf-8') as f:
         text = f.read()
     return Markup(markdown(text, output_format='html5'))
 
-@app.route('/')
+table = Blueprint('ptable', __name__)
+
+@table.route('/')
 def index():
     """Index page."""
     text = from_markdown('index.md')
     return render_template(
         'index.html', title=TITLE, text=text, ptable_svg=ptable_svg)
 
-@app.route('/<ion>/')
+@table.route('/<ion>/')
 def entry(ion):
     """Page showing details for a particular ion."""
     if str(ion) in IMAGES:
@@ -79,13 +72,3 @@ def entry(ion):
         levels_file=levels_file, levels_alt=ion,
         groups=groups, links=links
     )
-
-@freezer.register_generator
-def ion_entries():
-    for ion in app.config['ions']:
-        yield '/{}/'.format(ion)
-
-if __name__ == "__main__":
-    app.run(debug=True)
-    #freezer.run(debug=True)
-    

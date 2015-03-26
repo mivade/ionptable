@@ -1,4 +1,10 @@
 {
+    "aluminum": {
+        "27": {
+            "abundance": 100,
+            "spin": "5/2"
+        }
+    },
     "barium": {
         "138": {
             "abundance": 71.7,

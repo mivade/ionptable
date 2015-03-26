@@ -7,7 +7,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="/{{ config.home_url }}">Ion Trapping Periodic Table</a>
+      <a class="navbar-brand" href="{{ url_for('.index') }}">Ion Trapping Periodic Table</a>
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
@@ -15,7 +15,7 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Ions <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             {% for ion in config.ions %}
-            <li><a href="/{{ ion }}/">{{ ion|capitalize }}</a></li>
+            <li><a href="{{ url_for('.entry', ion=ion) }}">{{ ion|capitalize }}</a></li>
             {% endfor %}
           </ul>
         </li>
