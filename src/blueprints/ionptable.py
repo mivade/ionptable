@@ -29,8 +29,8 @@ GROUPS = {
 
 with codecs.open('groups.json', 'r', 'utf-8') as f:
     LINKS = json.load(f)
-with open('isotopes.json', 'r') as f:
-    isotopes = json.load(f)
+with open('data.json', 'r') as f:
+    data = json.load(f)
 with open('static/img/ptable.svg', 'r') as f:
     # Don't include the first 3 lines which include stuff we don't
     # want/need to embed.
@@ -68,7 +68,7 @@ def entry(ion):
     print(levels_file)
     return render_template(
         'ion.html', title=(ion.title() + ' - ' + TITLE),
-        ion=ion, data=isotopes[ion],
+        ion=ion, data=data[ion],
         levels_file=levels_file, levels_alt=ion,
         groups=groups, links=links
     )
