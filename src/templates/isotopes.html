@@ -1,0 +1,19 @@
+<div id="isotope-data">
+  <h2>Isotope data</h2>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Isotope</th>
+        <th>Abundance [%]</th>
+        <th>Nuclear spin</th>
+      </tr>
+    </thead>
+    {% for isotope in data['isotopes'] %}
+    <tr>
+      <td>{{ isotope }}</td>
+      <td>{{ data['abundances'][loop.index0] }}</td>
+      <td>{{ data['spins'][loop.index0] }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+</div>

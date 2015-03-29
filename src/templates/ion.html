@@ -7,37 +7,25 @@
   <img class="level-diagram" src="{{ url_for('static', filename=levels_file) }}" alt="{{ levels_alt }}"/>
 </div>
 {% endif %}
-<div id="isotope-data">
-  <h2>Isotope data</h2>
-  <table class="table table-striped">
-    <thead>
-      <tr>
-        <th>Isotope</th>
-        <th>Abundance [%]</th>
-        <th>Nuclear spin</th>
-      </tr>
-    </thead>
-    {% for isotope in data['isotopes'] %}
-    <tr>
-      <td>{{ isotope }}</td>
-      <td>{{ data['abundances'][loop.index0] }}</td>
-      <td>{{ data['spins'][loop.index0] }}</td>
-    </tr>
-    {% endfor %}
-  </table>
-</div>
+{% include('isotopes.html') %}
+{% include('photoionization.html') %}
 <div id="transitions">
-</div>
-<div id="photoionization">
 </div>
 <div id="links">
   <h2>Useful links</h2>
-  <h3>Research groups</h3>
-  <div id="group-links">
+  <div id="reference-links">
+    <h3>Reference data</h3>
     <ul>
-    {% for group in groups|default('') %}
+      {% for ref in data['references'] %}
+      <li><a href="{{ ref[1] }}">{{ ref[0] }}</a></li>
+      {% endfor %}
+  </div>
+  <div id="group-links">
+    <h3>Research groups</h3>
+    <ul>
+      {% for group in groups|default('') %}
       <li><a href="{{ links[loop.index - 1] }}">{{ group }}</a></li>
-    {% endfor %}
+      {% endfor %}
     </ul>
   </div>
 </div>

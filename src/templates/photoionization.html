@@ -1,0 +1,10 @@
+{% if data['photoionization'] is defined %}
+<div id="photoionization">
+  <h2>Photoionization schemes</h2>
+  <ul>
+    {% for scheme in data['photoionization'] %}
+    <li><a href="{{ scheme[2] }}">{{ scheme[1] }}</a> at {{ scheme[0] }}</li>
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}
