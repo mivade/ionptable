@@ -68,7 +68,7 @@ def entry(ion):
     print(levels_file)
     return render_template(
         'ion.html', title=(ion.title() + ' - ' + TITLE),
-        ion=ion, isotopes=isotopes[ion],
+        ion=ion, data=isotopes[ion],
         levels_file=levels_file, levels_alt=ion,
         groups=groups, links=links
     )
