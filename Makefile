@@ -1,2 +1,2 @@
 all:
-	cd src;	python generate.py;	mv build/ionptable/* ..
+	cd src;	python generate.py;	rsync -a build/ionptable/* ..

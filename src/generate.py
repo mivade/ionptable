@@ -20,6 +20,6 @@ def ion_generator():
 
 if __name__ == "__main__":
     #app.run(debug=True)
-    freezer.run(debug=True)
-    #freezer.freeze()
+    #freezer.run(debug=True)
+    freezer.freeze()
     
