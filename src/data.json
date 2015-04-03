@@ -11,6 +11,13 @@
         "isotopes": [138, 137, 136, 135, 134],
         "abundances": [71.7, 11.2, 7.9, 6.6, 2.4],
         "spins": ["0", "3/2", "0", "3/2", "0"],
+        "photoionization": [
+            [
+                "791 nm",
+                "\\( 6s^2 {\\ }^1S_0 \\leftrightarrow 6s6p {\\ }^3P_1 \\)",
+                "http://journals.aps.org/pra/abstract/10.1103/PhysRevA.75.053404"
+            ]
+        ],
         "references": [
             ["Wikipedia", "https://en.wikipedia.org/wiki/Barium"]
         ]
@@ -27,6 +34,13 @@
         "isotopes": [114, 112, 111, 110, 113, 116],
         "abundances": [28.7, 24.1, 12.8, 12.5, 12.2, 12.2],
         "spins": [0, 0, "1/2", 0, "1/2", 0],
+        "photoionization": [
+            [
+                "228.9 nm",
+                "\\( 5s^2 {\\ }^1S_0 \\leftrightarrow 5s5p {\\ }^1P_1 \\)",
+                "http://journals.aps.org/pra/abstract/10.1103/PhysRevA.74.063421"
+            ]
+        ],
         "references": [
             ["Wikipedia", "https://en.wikipedia.org/wiki/Cadmium"]
         ]
@@ -55,6 +69,13 @@
         "isotopes": [24, 26, 25],
         "abundances": [79, 11, 10],
         "spins": [0, 0, "5/2"],
+        "photoionization": [
+            [
+                "285.2 nm",
+                "\\( 3s^2 {\\ }^1S_0 \\leftrightarrow 3s3p {\\ }^1P_1 \\)",
+                "http://iopscience.iop.org/0953-4075/33/22/302/"
+            ]
+        ],
         "references": [
             ["Wikipedia", "https://en.wikipedia.org/wiki/Magnesium"]
         ]
@@ -84,6 +105,13 @@
         "isotopes": [232, 229],
         "abundances": [100, "syn"],
         "spins": [0, "5/2"],
+        "photoionization": [
+            [
+                "461 nm",
+                "\\( 5s^2 {\\ }^1S_0 \\leftrightarrow 5s5p {\\ }^1P_1 \\)",
+                "http://arxiv.org/abs/quant-ph/0607055"
+            ]
+        ],
         "references": [
             ["Wikipedia", "https://en.wikipedia.org/wiki/Thorium"]
         ]

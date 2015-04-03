@@ -19,7 +19,11 @@ def ion_generator():
         yield '/ionptable/{}/'.format(ion)
 
 if __name__ == "__main__":
-    #app.run(debug=True)
-    #freezer.run(debug=True)
-    freezer.freeze()
+    import sys
+    if len(sys.argv) == 1:
+        freezer.freeze()
+    elif sys.argv[1] == 'run':
+        app.run(debug=True)
+    elif sys.argv[1] == 'test':
+        freezer.run(debug=True)
     
