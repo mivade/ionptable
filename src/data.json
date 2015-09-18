@@ -97,6 +97,13 @@
         "isotopes": [88, 86, 87],
         "abundances": [82.6, 9.9, 7],
         "spins": [0, 0, "9/2"],
+	"photoionization": [
+            [
+                "461 nm",
+                "\\( 5s^2 {\\ }^1S_0 \\leftrightarrow 5s5p {\\ }^1P_1 \\)",
+                "http://arxiv.org/abs/quant-ph/0607055"
+            ]
+        ],
         "references": [
             ["Wikipedia", "https://en.wikipedia.org/wiki/Strontium"]
         ]
@@ -105,13 +112,6 @@
         "isotopes": [232, 229],
         "abundances": [100, "syn"],
         "spins": [0, "5/2"],
-        "photoionization": [
-            [
-                "461 nm",
-                "\\( 5s^2 {\\ }^1S_0 \\leftrightarrow 5s5p {\\ }^1P_1 \\)",
-                "http://arxiv.org/abs/quant-ph/0607055"
-            ]
-        ],
         "references": [
             ["Wikipedia", "https://en.wikipedia.org/wiki/Thorium"]
         ]
