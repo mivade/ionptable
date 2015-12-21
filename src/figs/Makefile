@@ -1,23 +1,14 @@
-PDFCC = pdflatex
+PDFCC = -xelatex
 CONVERT = pdf2svg
-PDFS = $(shell find . -name '*.tex' | sed 's/tex/pdf/')
 IMGDIR = '../static/img/'
-SVGS = $(shell find . -name '*.tex'  | sed 's/tex/svg/')
+TEXS = $(wildcard *.tex)
+PDFS = $(patsubst %.tex,%.pdf,$(TEXS))
+SVGS = $(patsubst %.pdf,%.svg,$(PDFS))
 
-.PHONY:
-	echo $(PDFS)
-	echo $(SVGS)
-
-all: $(PDFS) $(SVGS)
-
-nodes.pdf: nodes.tex
-	echo 'nothing to do'
-
-nodes.png: nodes.tex
-	echo 'nothing to do'
+all: $(PDFS) $(SVGS) levels.sty
 
 %.pdf: %.tex
-	cd $(shell dirname $<); $(PDFCC) $(shell basename $<)
+	latexmk -xelatex $<
 
 %.svg: %.pdf
 	mkdir -p $(IMGDIR)
