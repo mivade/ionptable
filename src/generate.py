@@ -6,11 +6,15 @@ from flask.ext.frozen import Freezer
 from blueprints import ionptable
 
 app = Flask(__name__, static_folder='static', static_url_path='/ionptable/static')
+
+# Ion pages to render
 app.config['ions'] = [
     'barium', 'beryllium', 'cadmium', 'calcium',
     'magnesium', 'mercury', 'radium', 'strontium',
     'thorium', 'ytterbium']
+
 app.register_blueprint(ionptable.table, url_prefix='/ionptable')
+
 freezer = Freezer(app)
 
 @freezer.register_generator
@@ -26,4 +30,3 @@ if __name__ == "__main__":
         app.run(debug=True)
     elif sys.argv[1] == 'test':
         freezer.run(debug=True)
-    

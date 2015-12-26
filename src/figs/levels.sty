@@ -1,17 +1,16 @@
-\usepackage[svgnames]{xcolor}
-\usepackage{tikz}
-\usetikzlibrary{calc}
-\usepackage[active,tightpage]{preview}
+% Units are in cm!! Scale changes units to scale*cm Units of xshift
+% and yshift are typically pt = 1/72 inches
+% (and don't scale with scale!!)
 
-\PreviewEnvironment{tikzpicture}
+\usepackage{lmodern}
+\usepackage{siunitx}
+\usepackage[version=3]{mhchem}
+\usepackage{braket}
 
-\pagestyle{empty}
+\usepackage{graphicx}
 
-% Common lengths
-\def\lwidth{1}
-\def\dy{.025}
+\usetikzlibrary{decorations.pathmorphing}
 
-% Common styles
-\tikzstyle{level} = [line width=2]
-\tikzstyle{transition} = [line width=1.75,>=stealth,<->]
-\tikzstyle{tlabel} = [sloped,midway,fill=white]
+\tikzstyle{level} = [thick]
+\tikzstyle{trans} = [thick,<->]
+\tikzstyle{labels} = [fill=white,align=center,opacity=1]

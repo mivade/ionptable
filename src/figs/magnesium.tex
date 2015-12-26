@@ -1,0 +1,32 @@
+\documentclass[tikz]{standalone}
+
+\usepackage{levels}
+
+\begin{document}
+
+\begin{tikzpicture}[
+  x=1.3cm,y=1.3cm
+  % scale =1.5cm
+  ]
+
+  % S-state:
+  \draw[level] (0,0) node[left] {$3\,{}^2S_{1/2}$} -- (4,0)
+  node[midway,shift={(0,0)}](s12){};
+
+  % P 1/2
+  \draw[level] (0,4.5) node[left, labels] {$3\,{}^2P_{1/2}$ \\ \SI{3.854(30)}{\ns}} -- (4,4.5)
+  node[midway,shift={(+1,0)}](p12){};
+  % P 3/2
+  \draw[level] (0,6) node[left, labels] {$3\,{}^2P_{3/2}$ \\ \SI{3.810(40)}{\ns}} -- (4,6)
+  node[midway,shift={(-1,0)}](p32){};
+
+  % S to P
+  % P1/2:
+  \draw[trans, blue](s12.center)+(+1,0) -- (p12.center)
+  node[labels,midway,shift={(0,-0.5)}]{ \SI{280.4}{\nm} \\  \SI{41.30(32)}{\MHz}};
+  % P3/2:
+  \draw[trans,](s12.center)+(-1,0) -- (p32.center)
+  node[labels,midway,shift={(0,0.0)}]{ \SI{279.6}{\nm} \\ \SI{41.77(44)}{\MHz}}; %%%%
+\end{tikzpicture}
+
+\end{document}
