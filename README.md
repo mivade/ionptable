@@ -1,5 +1,4 @@
-Ion Trapping Periodic Table
-===========================
+# Ion Trapping Periodic Table #
 
 This repository recreates the Ion Periodic Table listing ions used in
 ion trapping experiments originally hosted on the
@@ -14,8 +13,7 @@ the source tree.
 [newptable]: http://iontrap.umd.edu/resources-2/periodic-table/
 [gh-pages]: http://mivade.github.io/ionptable/
 
-License
--------
+## License and credits ##
 
 The periodic table image was modified from the original SVG source
 found [here][svg ptable] which is distributed under the terms of the
@@ -30,7 +28,9 @@ for their specific licenses).
 
 All other files contained in this repository are distributed under the
 terms of the [Creative Commons][CC]
-[Attribution-ShareAlike 4.0 International][CC BY-SA 4.0] license.
+[Attribution-ShareAlike 4.0 International][CC BY-SA 4.0]
+license. Special thanks to Hans Harhoff Andersen and Steffen Meyer for
+their contributions to the level diagram figures.
 
 [CC]: https://creativecommons.org
 [CC BY-SA 3.0]: https://creativecommons.org/licenses/by-sa/3.0/
