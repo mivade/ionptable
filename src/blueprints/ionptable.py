@@ -6,18 +6,9 @@ from flask import Blueprint, render_template, Markup, json
 from markdown import markdown
 
 TITLE = "Ion Trapping Periodic Table"
-IMAGES = {
-    'barium': 'img/BaLevels.svg',
-    'beryllium': 'img/BeLevels.svg',
-    'calcium': 'img/CaLevels.svg',
-    'cadmium': 'img/CdLevels.svg',
-    'mercury': 'img/HgLevels.svg',
-    'magnesium': 'img/MgLevels.svg',
-    'strontium': 'img/SrLevels.svg'
-}
 GROUPS = {
-    'barium': [u'Düsseldorf', 'Innsbruck', 'Georgia Tech', 'Northwestern', 'Ulm', 'Washington'],
-    'beryllium': [u'Düsseldorf', 'NIST'],
+    'barium': ['Düsseldorf', 'Innsbruck', 'Georgia Tech', 'Northwestern', 'Ulm', 'Washington'],
+    'beryllium': ['Düsseldorf', 'NIST'],
     'calcium': ['Aarhus', 'Basel', 'Berkeley', 'Innsbruck', 'Oxford'],
     'cadmium': ['Maryland'],
     'mercury': ['NIST'],
@@ -55,8 +46,8 @@ def index():
 @table.route('/<ion>/')
 def entry(ion):
     """Page showing details for a particular ion."""
-    if str(ion) in IMAGES:
-        levels_file = IMAGES[ion]
+    if str(ion) not in ['thorium', 'ytterbium']:
+        levels_file = 'img/{}.svg'.format(ion)
     else:
         levels_file = None
     if ion in GROUPS:
