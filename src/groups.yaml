@@ -1,0 +1,89 @@
+- Aarhus:
+    url: http://phys.au.dk/forskning/forskningsomraader/amo/the-ion-trap-group/
+    ions:
+      - calcium
+      - magnesium
+- Basel:
+    url: http://www.chemie.unibas.ch/~willitsch/
+    ions:
+      - calcium
+- Berkeley:
+    url: http://physics.berkeley.edu/research/haeffner/index.html
+    ions:
+      - calcium
+- Düsseldorf:
+    url: http://www.exphy.uni-duesseldorf.de/
+    ions:
+      - barium
+      - beryllium
+- Innsbruck:
+    url: http://heart-c704.uibk.ac.at/
+    ions:
+      - barium
+      - calcium
+      - strontium
+- Duke:
+    url: http://mist.ee.duke.edu/index.php
+    ions:
+      - ytterbium
+- Georgia Tech:
+    url: http://chapmanlabs.gatech.edu/
+    ions:
+      - barium
+      - thorium
+- GTRI:
+    url: http://www.quantum.gatech.edu/home.shtml
+    ions:
+      - ytterbium
+- Maryland:
+    url: http://iontrap.umd.edu/
+    ions:
+      - cadmium
+      - ytterbium
+- Michigan:
+    url: http://sites.lsa.umich.edu/kuzmich-lab/research/229th-nuclear-isomer/
+    ions:
+      - thorium
+- MIT:
+    url: http://web.mit.edu/~cua/www/quanta/
+    ions:
+      - strontium
+- MIT Lincoln Lab:
+    url: http://www.ll.mit.edu/
+    ions:
+      - strontium
+- MPQ:
+    url: http://www.mpq.mpg.de/~haensch/
+    ions:
+      - magnesium
+- NIST:
+    url: http://www.nist.gov/pml/div688/grp10/index.cfm
+    ions:
+      - beryllium
+      - magnesium
+      - mercury
+      - strontium
+- Northwestern:
+    url: http://faculty.wcas.northwestern.edu/brian-odom/index.html
+    ions:
+      - barium
+- Oxford:
+    url: http://www2.physics.ox.ac.uk/research/ion-trap-quantum-computing-group
+    ions:
+      - calcium
+- Ulm:
+    url: http://www.uni-ulm.de/en/nawi/qm.html
+    ions:
+      - barium
+- Washington:
+    url: https://depts.washington.edu/qcomp/
+    ions:
+      - barium
+- NPL:
+    url: http://www.npl.co.uk/science-technology/time-frequency/research/optical-frequency-standards/trapped-ion-optical-frequency-standards
+    ions:
+      - strontium
+- Paris:
+    url: http://www.mpq.univ-paris-diderot.fr/spip.php?rubrique29&lang=en
+    ions:
+      - strontium
