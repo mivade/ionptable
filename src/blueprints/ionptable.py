@@ -6,17 +6,6 @@ from flask import Blueprint, render_template, Markup, json
 from markdown import markdown
 
 TITLE = "Ion Trapping Periodic Table"
-GROUPS = {
-    'barium': ['Düsseldorf', 'Innsbruck', 'Georgia Tech', 'Northwestern', 'Ulm', 'Washington'],
-    'beryllium': ['Düsseldorf', 'NIST'],
-    'calcium': ['Aarhus', 'Basel', 'Berkeley', 'Innsbruck', 'Oxford'],
-    'cadmium': ['Maryland'],
-    'mercury': ['NIST'],
-    'magnesium': ['Aarhus', 'MPQ', 'NIST'],
-    'strontium': ['MIT', 'MIT Lincoln Lab', 'NIST', 'NPL', 'Paris', 'Innsbruck'],
-    'thorium': ['Michigan'],
-    'ytterbium': ['Duke', 'GTRI', 'Maryland']
-}
 
 with codecs.open('groups.json', 'r', 'utf-8') as f:
     LINKS = json.load(f)
@@ -28,6 +17,7 @@ with open('static/img/ptable.svg', 'r') as f:
     svg = f.readlines()[3:]
     ptable_svg = Markup(''.join(svg))
 
+
 def from_markdown(filename):
     """Read a Markdown file and convert to HTML."""
     with codecs.open(filename, 'r', 'utf-8') as f:
@@ -36,12 +26,14 @@ def from_markdown(filename):
 
 table = Blueprint('ptable', __name__)
 
+
 @table.route('/')
 def index():
     """Index page."""
     text = from_markdown('index.md')
     return render_template(
         'index.html', title=TITLE, text=text, ptable_svg=ptable_svg)
+
 
 @table.route('/<ion>/')
 def entry(ion):
